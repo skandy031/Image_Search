@@ -1,20 +1,22 @@
-\documentclass[14pt]{article}
+\documentclass[a4paper,landscape]{article}
+\usepackage[margin=2cm]{geometry}
+\pagestyle{empty}
 \usepackage{graphicx}
-\usepackage[landscape]{geometry}
+\usepackage{parskip}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
 \fancyhf{}
+
 \chead{\VAR{inpt}}
-\rfoot{}
 \begin{document}
 \BLOCK{for k in data}
 \begin{minipage}{.5\linewidth}
 \centering
-\includegraphics[width=10cm, height =12cm]{\VAR{k[0]}}
+\includegraphics[height = 10cm, width=.9\linewidth,keepaspectratio]{\VAR{k[0]}}
 
 \bigskip
-\begin{tabular}{|c|c|}
+\begin{tabular}{|@{}ll@{}|}
 \hline
 Title & Value\\
 \hline
