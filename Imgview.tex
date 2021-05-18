@@ -1,0 +1,30 @@
+\documentclass[14pt]{article}
+\usepackage{graphicx}
+\usepackage[landscape]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\VAR{inpt}}
+\rfoot{}
+\begin{document}
+\BLOCK{for k in data}
+\begin{minipage}{.5\linewidth}
+\centering
+\includegraphics[width=10cm, height =12cm]{\VAR{k[0]}}
+
+\bigskip
+\begin{tabular}{|c|c|}
+\hline
+Title & Value\\
+\hline
+\hline
+ make:& \VAR{k[1]}\\
+ model& \VAR{k[2]}\\
+ exposure time&\VAR{k[3]}\\
+ aperture& \VAR{k[4]}\\
+\hline
+\end{tabular}
+\end{minipage}
+\BLOCK{endfor}
+\end{document}
