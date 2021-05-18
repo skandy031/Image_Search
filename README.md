@@ -19,3 +19,14 @@ pip install json,
 
 
 *The program will not work if a LaTeX reader is not installed, I used Texworks, I suggest using the same for optimal results*
+
+
+
+
+Instructions:
+
+1)Run 'imgsrch.py' file
+
+2)Enter keyword
+
+3)Open final.pdf
